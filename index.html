@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun, Dek!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎉 Selamat Ulang Tahun, Dek! 🎂</h1>
+    <nav>
+      <button onclick="scrollToSection('ucapan')">Ucapan</button>
+      <button onclick="scrollToSection('galeri')">Galeri</button>
+      <button onclick="scrollToSection('komentar')">Komentar</button>
+    </nav>
+  </header>
+
+  <section id="ucapan">
+    <p>Hai Dek💖, selamat ulang tahun ya! Kamu selalu spesial dan bikin hari-hariku indah. I love you! 💕</p>
+  </section>
+
+  <section id="galeri" class="slideshow">
+    <img src="WhatsApp Image 2025-05-09 at 08.55.04 (1).jpeg" alt="Foto 1" />
+    <img src="WhatsApp Image 2025-05-09 at 08.55.07 (2).jpeg" alt="Foto 2" />
+    <img src="WhatsApp Image 2025-05-09 at 08.55.07 (1).jpeg" alt="Foto 3" />
+  </section>
+
+  <section id="musik">
+    <label for="musicSelect">🎵 Pilih Lagu:</label>
+    <select id="musicSelect">
+      <option value="One Direction - Where We Are (Official Audio) - TopMusicVEVO.mp3">were we are</option>
+      <option value="Anne-Marie & James Arthur - Rewrite The Stars [from The Greatest Showman Reimagined] - Anne-Marie.mp3">Rewrite The Stars</option>
+      <option value="8 Letters - Why Don't We [Official Music Video] - Why Don't We.mp3">8 Letters</option>
+    </select>
+    <audio id="bgMusic" controls autoplay loop></audio>
+  </section>
+
+  <section id="komentar">
+    <h2>💬 Tinggalkan Komentar</h2>
+    <input type="text" id="commentInput" placeholder="Tulis ucapan..." />
+    <button onclick="addComment()">Kirim</button>
+    <ul id="commentList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
